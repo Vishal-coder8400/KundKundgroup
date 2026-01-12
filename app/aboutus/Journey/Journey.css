@@ -1,0 +1,15 @@
+.journey-mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .journey-mobile {
+    display: block;
+    margin: auto;
+    text-align: center;
+
+    width: 100%;
+  }
+  .journey-laptop {
+    display: none;
+  }
+}

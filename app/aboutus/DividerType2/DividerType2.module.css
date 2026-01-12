@@ -1,0 +1,137 @@
+.container {
+  background-image: radial-gradient(
+    farthest-corner at 100vh 0px,
+    #284c9c 0%,
+    #191919 65%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.content1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 40px 0px;
+}
+
+.content1 h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.content1 p {
+  font-size: 18px;
+  color: #d1d1d1;
+  margin-top: 10px;
+}
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.imgContainer .img1 {
+  height: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.imgBG {
+  position: absolute;
+  bottom: 0;
+  height: 280px;
+  width: 400px;
+  background: transparent;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content1 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content1 h1 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  .content1 p {
+    font-size: 16px;
+  }
+  .imgContainer {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .imgContainer .img1 {
+    width: 100%;
+    max-width: 400px;
+  }
+  .imgBG {
+    display: none; /* Hide background image for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .content1 h1 {
+    display: flex;
+    gap: 0;
+  }
+  .content1 h1 {
+    font-size: 24px;
+  }
+  .content1 p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .imgContainer .img1 {
+    width: 100%;
+  }
+  .title h1 {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    text-align: left;
+  }
+}

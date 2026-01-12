@@ -1,0 +1,170 @@
+.container {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  color: black;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.subHeading {
+  font-size: 18px;
+  color: #666;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.textContainer {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+  padding: 30px;
+}
+
+.title {
+  font-size: 29px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.textContainer hr {
+  margin-bottom: 20px;
+}
+
+.textContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #4a3aff;
+  border-radius: 5px;
+  color: #4a3aff;
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a3aff;
+  color: #fff;
+}
+
+.date {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 350px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .subHeading {
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .textContainer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .textContainer div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .imageContainer {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .subHeading {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .textContainer {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+.container {
+  background: #f0efeb80;
+  color: black;
+}
+.content {
+  display: flex;
+}
+.content .left {
+  width: 60%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.content .left p {
+  width: 70%;
+  text-align: center;
+}
+.content .right {
+  margin: 50px 0px;
+}
+.content .right div img {
+  background-color: #4a3aff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.content .right div {
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  align-items: center;
+  border: 1px solid grey;
+  margin: 20px;
+  width: 70%;
+  border-radius: 5px;
+}
+.content .right div p {
+  width: 50%;
+}
+.content .left button {
+  background-color: #4a3aff;
+  border: 2px solid #4a3aff;
+  color: white;
+}
+.content .left button:hover {
+  background-color: white;
+  color: #4a3aff;
+}
+@media screen and (max-width: 700px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .left {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+  }
+  .content .left p {
+    text-align: justify;
+  }
+  .content .right {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content .right div p {
+    width: 70%;
+  }
+  .content .right div {
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    align-items: center;
+    border: 1px solid grey;
+    margin: 20px;
+    width: 80%;
+    border-radius: 5px;
+  }
+  .content .left button {
+    background-color: #4a3aff;
+    border: 2px solid #4a3aff;
+    color: white;
+    width: 80%;
+  }
+}

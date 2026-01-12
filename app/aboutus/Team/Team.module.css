@@ -1,0 +1,155 @@
+.container {
+  text-align: center;
+  padding: 80px 20px;
+  color: black;
+  background: #f0efeb80;
+}
+
+.headerSection {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.headerSection h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.headerSection p {
+  width: 80%;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.headerSection button {
+  background-color: #4a3aff;
+  color: white;
+  border: 2px solid #4a3aff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.headerSection button:hover {
+  color: #4a3aff;
+  background-color: white;
+  border: 2px solid #4a3aff;
+  transform: translateY(-2px);
+}
+
+.teamSection {
+  margin-bottom: 60px;
+}
+
+.teamSection h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.teamContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teamTile {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.teamTile:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+}
+
+.profileImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.memberInfo {
+  padding: 15px;
+  text-align: left;
+}
+
+.memberInfo h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.memberInfo p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media screen and (max-width: 900px) {
+  .teamContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teamContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headerSection p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 60px 15px;
+  }
+
+  .headerSection h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .headerSection p {
+    width: 100%;
+
+    text-align: justify;
+  }
+
+  .headerSection button {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .teamContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .teamContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,132 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 70%;
+}
+.title p {
+  background-color: white;
+  /* border: 1px solid rgb(228, 222, 222); */
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px 30px;
+  width: fit-content;
+  margin-left: 220px;
+  margin-top: 100px;
+  color: black;
+  font-size: 30px;
+  font-weight: 600 !important;
+}
+.content {
+  align-self: self-end;
+  background: rgb(232, 237, 236);
+  background: rgb(251, 254, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 254, 253, 0.02853641456582634) 0%,
+    rgba(20, 20, 20, 0.9248949579831933) 54%
+  );
+  height: 48%;
+  width: 100%;
+}
+.content div h1 {
+  font-size: 56px;
+  font-weight: 600;
+  width: 75%;
+  line-height: 60px;
+}
+.content div p {
+  width: 50% !important;
+}
+.content div {
+  width: 75%;
+  margin: auto;
+}
+.content div div {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.content div div p {
+  width: 55%;
+}
+.content div div button {
+  margin-right: 20px;
+  padding: 10px;
+  min-width: 250px;
+  max-height: 50px !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .content div h1 {
+    font-size: 50px;
+    font-weight: 600;
+    width: 75%;
+    line-height: 60px;
+  }
+  .content div {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content div h1 {
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+  }
+  .content div div {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .content div div p {
+    width: 100%;
+  }
+  .content div p {
+    width: 100% !important;
+    text-align: center;
+  }
+  .content div div button {
+    margin-right: 20px;
+    padding: 10px;
+    min-width: 250px;
+    max-height: 50px !important;
+    margin-top: 20px;
+  }
+  .container {
+    background-position: 50% 30%;
+    background: white;
+  }
+
+  .content {
+    display: flex;
+  }
+  .title p {
+    background-color: white;
+    /* border: 1px solid rgb(228, 222, 222); */
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px 30px;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: 100px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600 !important;
+  }
+}

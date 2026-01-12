@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  background: #f0efeb80;
+  color: black;
+}
+.content1 {
+  width: 70%;
+  padding: 100px 0px;
+  margin: auto;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.content2 h1 {
+  font-size: 40px;
+}
+.content2 p {
+  padding-top: 40px;
+  font-size: 15px;
+  width: 90%;
+}
+.imgContainer {
+  position: relative;
+  display: flex;
+}
+.imgContainer img {
+  position: relative;
+  z-index: 2;
+}
+.imgBG {
+  bottom: 40px;
+  height: 350px;
+  width: 100%;
+  background: #eef0e6;
+  position: absolute;
+  z-index: 1;
+  border-radius: 10px;
+}
+.tag {
+  text-align: center;
+  transform: scale(1.5);
+  padding-bottom: 70px;
+}
+.belowTitle {
+  width: 70%;
+  margin: auto;
+  font-size: 72px;
+  padding-bottom: 100px;
+}
+.tagV {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .imgContainer {
+    position: relative;
+    display: flex;
+  }
+  .imgContainer img {
+    position: relative;
+    z-index: 2;
+    height: 350px;
+    bottom: 0px;
+  }
+  .imgBG {
+    bottom: 25px;
+    height: 350px;
+    width: 100%;
+    background: #eef0e6;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  .content2 h1 {
+    font-size: 28px;
+  }
+
+  .content2 p {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .content1 {
+    width: 85%;
+    padding: 100px 0px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+  }
+  .belowTitle {
+    width: 85%;
+    margin: auto;
+    font-size: 60px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .content2 h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .content1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .imgContainer img {
+    position: relative;
+    z-index: 2;
+    height: 300px;
+    bottom: 0px;
+  }
+  .imgBG {
+    bottom: 0px;
+    height: 300px;
+    width: 300px;
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  .belowTitle {
+    width: 90%;
+    margin: auto;
+    font-size: 30px;
+    padding-bottom: 100px;
+    font-weight: 600;
+  }
+  .tag {
+    display: none;
+  }
+  .tagV {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+}
