@@ -10,7 +10,7 @@ const page = () => {
       <DividerType1
         heading={"Our Vision"}
         desc={
-          "To be the leading provider of innovative solutions, consistently creating value across industries by empowering businesses, shaping careers, and enhancing lives through trusted services. Deliver comprehensive services that drive growth, learning, and transformation. Introduce innovative strategies and technologies to improve efficiency and outcomes."
+          "To be the leading provider of innovative solutions, consistently creating value across industries by empowering businesses, shaping careers, and enhancing lives through trusted services. Deliver comprehensive, services that drive growth, learning, and transformation. Introduce innovative strategies and technologies to improve efficiency and outcomes."
         }
         buttonText={""}
       />
